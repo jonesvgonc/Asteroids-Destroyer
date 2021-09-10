@@ -9,10 +9,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{C6537036-8086-F849-A6C6-595D6B613EA6}</ProjectGuid>
+    <ProjectGuid>{8955FF68-5434-B192-97B6-49DA42C0BF58}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Unity.Mathematics</AssemblyName>
+    <AssemblyName>Unity.Properties.UI</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>.</BaseDirectory>
@@ -53,97 +53,20 @@
     <UnityVersion>2020.3.17f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\float4.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\Noise\cellular2x2.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\int2.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\half3.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\double2x2.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\bool2.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\float4x4.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\int3.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\Noise\common.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\uint4x4.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\int4x2.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\half2.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\bool3x2.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\uint4x2.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\bool4.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\int2x2.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\float4x2.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\int3x2.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\quaternion.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\double4x4.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\double4x2.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\PropertyAttributes.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\Noise\noise3D.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\uint3x4.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\uint2x3.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\Noise\noise4D.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\bool2x2.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\uint3x3.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\double3x4.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\float3.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\matrix.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\int4.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\half4.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\uint2x4.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\rigid_transform.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\Noise\classicnoise4D.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\math.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\double4x3.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\int4x4.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\double2.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\double2x3.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\int3x4.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\Noise\cellular2D.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\Noise\classicnoise2D.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\float3x2.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\bool3x4.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\uint2.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\int2x3.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\Noise\cellular3D.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\bool4x4.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\double3.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\Noise\noise3Dgrad.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\bool4x3.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\double2x4.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\bool3.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\uint3.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\uint3x2.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\int2x4.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\bool2x4.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\Noise\classicnoise3D.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\double3x3.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\Noise\cellular2x2x2.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\matrix.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\float4x3.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\Noise\noise2D.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\Noise\psrdnoise2D.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\bool2x3.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\float3x4.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\float2x4.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\double4.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\float2x2.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\int3x3.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\math_unity_conversion.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\bool4x2.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\bool3x3.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\int4x3.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\float2x3.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\half.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\random.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\uint2x2.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\uint4x3.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\double3x2.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\float3x3.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\uint4.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\float2.gen.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\Geometry\Plane.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\Properties\AssemblyInfo.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\Geometry\MinMaxAABB.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Runtime\Attributes\SystemVersionUsageAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Runtime\Attributes\InspectorOptionsAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Runtime\Attributes\PaginationAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Runtime\Attributes\DelayedValueAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Runtime\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Runtime\Attributes\DisplayNameAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Runtime\Attributes\MinValueAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Runtime\Extensions\VisualElementExtensions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Runtime\Attributes\MinMaxAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Runtime\Attributes\InspectorAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Runtime\Attributes\CreateInstanceOnInspectionAttribute.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Library\PackageCache\com.unity.mathematics@1.2.1\Unity.Mathematics\Unity.Mathematics.asmdef" />
+    <None Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Runtime\Unity.Properties.UI.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -742,6 +665,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Unity.Properties.csproj">
+      <Project>{DC45992C-CAF4-487C-9C6A-D66DE49216D0}</Project>
+      <Name>Unity.Properties</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
