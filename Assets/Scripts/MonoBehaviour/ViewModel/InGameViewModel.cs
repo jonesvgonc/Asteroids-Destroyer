@@ -14,4 +14,10 @@ public class InGameViewModel : MonoBehaviour
         var inGameUI = Instantiate(inGameMenuPrefab);
         inGameView = inGameUI.GetComponent<InGameView>();
     }
+
+    public void EndGame()
+    {
+        Destroy(inGameView.gameObject);
+        UIGameManager.Instance.StartMainMenu();
+    }
 }
