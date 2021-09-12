@@ -70,12 +70,27 @@ public class InGameViewModel : MonoBehaviour, IConvertGameObjectToEntity
 
     public void Update()
     {
-        if (accelerating) Debug.Log("Accel");
-        if (rotatingClockwise) Debug.Log("Rotating clckwise");
-        if (rotatingCounterClockwise) Debug.Log("Rotationg Counter Clock");
-        if (shoting) Debug.Log("Shoting");
+        if (accelerating)
+        {
+            var entity = entityManager.CreateEntity();
+            entityManager.AddComponent<AccelerateFlag>(entity);
+        }
+        if (rotatingClockwise)
+        {
+            var entity = entityManager.CreateEntity();
+            entityManager.AddComponentData(entity, new RotateFlag() { Direction = -1 });
+        }
+        if (rotatingCounterClockwise)
+        {
+            var entity = entityManager.CreateEntity();
+            entityManager.AddComponentData(entity, new RotateFlag() { Direction = 1 });
+        }
+        if (shoting)
+        {
+            var entity = entityManager.CreateEntity();
+            entityManager.AddComponent<ShotFlag>(entity);
+        }
     }
-
 
     public void EndGame()
     {
@@ -85,7 +100,7 @@ public class InGameViewModel : MonoBehaviour, IConvertGameObjectToEntity
 
     public void Shot(PointerEventData data)
     {
-        shoting = !shoting;
+        shoting = !shoting; 
     }
 
     public void Accelerate(PointerEventData data)

@@ -66,6 +66,18 @@
     <Compile Include="Assets\Scripts\MonoBehaviour\Manager\SpritesManager.cs" />
     <Compile Include="Assets\Scripts\ECS\Systems\StartGameSystem.cs" />
     <Compile Include="Assets\Scripts\ECS\Components\StartGameFlag.cs" />
+    <Compile Include="Assets\Scripts\ECS\Components\AccelerateComponent.cs" />
+    <Compile Include="Assets\Scripts\ECS\Components\RotateComponent.cs" />
+    <Compile Include="Assets\Scripts\ECS\Components\ShotComponent.cs" />
+    <Compile Include="Assets\Scripts\ECS\Components\AccelerateFlag.cs" />
+    <Compile Include="Assets\Scripts\ECS\Components\RotateFlag.cs" />
+    <Compile Include="Assets\Scripts\ECS\Components\ShotFlag.cs" />
+    <Compile Include="Assets\Scripts\ECS\Components\DestroyFlag.cs" />
+    <Compile Include="Assets\Scripts\ECS\Systems\InputSystem.cs" />
+    <Compile Include="Assets\Scripts\ECS\Systems\DestroySystem.cs" />
+    <Compile Include="Assets\Scripts\ECS\Systems\MoveSystem.cs" />
+    <Compile Include="Assets\Scripts\ECS\Systems\RotateSystem.cs" />
+    <Compile Include="Assets\Scripts\ECS\Systems\ShotSystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
