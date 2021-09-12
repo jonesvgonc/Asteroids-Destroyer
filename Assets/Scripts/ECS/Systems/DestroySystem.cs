@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.Entities;
 using UnityEngine;
 
-[UpdateInGroup(typeof(PresentationSystemGroup))]
+[UpdateInGroup(typeof(InitializationSystemGroup))]
 
 public class DestroySystem : SystemBase
 {

@@ -9,13 +9,18 @@ public class GameObjectsManager : MonoBehaviour, IDeclareReferencedPrefabs, ICon
     public GameObject PlayerPrefab;
     public static Entity PlayerEntity;
 
+    public GameObject PlayerAttackPrefab;
+    public static Entity PlayerAttackEntity;
+
     public void Convert(Entity entity, EntityManager dstManager, GameObjectConversionSystem conversionSystem)
     {
         PlayerEntity = conversionSystem.GetPrimaryEntity(PlayerPrefab);
+        PlayerAttackEntity = conversionSystem.GetPrimaryEntity(PlayerAttackPrefab);
     }
 
     public void DeclareReferencedPrefabs(List<GameObject> referencedPrefabs)
     {
         referencedPrefabs.Add(PlayerPrefab);
+        referencedPrefabs.Add(PlayerAttackPrefab);
     }
 }

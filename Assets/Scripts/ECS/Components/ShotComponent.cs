@@ -5,5 +5,4 @@ using UnityEngine;
 
 public struct ShotComponent : IComponentData
 {
-   
 }

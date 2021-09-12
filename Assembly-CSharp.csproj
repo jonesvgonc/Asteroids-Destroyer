@@ -78,6 +78,10 @@
     <Compile Include="Assets\Scripts\ECS\Systems\MoveSystem.cs" />
     <Compile Include="Assets\Scripts\ECS\Systems\RotateSystem.cs" />
     <Compile Include="Assets\Scripts\ECS\Systems\ShotSystem.cs" />
+    <Compile Include="Assets\Scripts\ECS\Components\PlayerAttackComponent.cs" />
+    <Compile Include="Assets\Scripts\ECS\Authorings\PlayerAttackAuthoring.cs" />
+    <Compile Include="Assets\Scripts\ECS\Systems\PlayerAttackAnimationSystem.cs" />
+    <Compile Include="Assets\Scripts\ECS\Systems\PlayerAttackMovementSystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

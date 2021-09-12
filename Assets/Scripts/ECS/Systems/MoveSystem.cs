@@ -31,8 +31,19 @@ public class MoveSystem : SystemBase
         {
             var LocalToWorldComponent = EntityManager.GetComponentData<LocalToWorld>(playerEntity);
             var moveComponent = EntityManager.GetComponentData<Translation>(playerEntity);
+            var bounds = UIGameManager.Instance.ScreenBounds;
 
             moveComponent.Value += LocalToWorldComponent.Up * (moveAmmount * EntityManager.GetComponentData<PlayerComponent>(playerEntity).Speed * delta);
+
+            if (moveComponent.Value.y > bounds.y)
+                moveComponent.Value.y = -bounds.y;
+            else if (moveComponent.Value.y < -bounds.y)
+                moveComponent.Value.y = bounds.y;
+
+            if (moveComponent.Value.x > bounds.x)
+                moveComponent.Value.x = -bounds.x;
+            else if (moveComponent.Value.x < -bounds.x)
+                moveComponent.Value.x = bounds.x;
 
             EntityManager.SetComponentData(playerEntity, moveComponent);
         }

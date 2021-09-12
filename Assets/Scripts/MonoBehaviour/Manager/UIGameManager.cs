@@ -13,6 +13,8 @@ public class UIGameManager : MonoBehaviour
     [SerializeField]
     private MainMenuViewModel mainMenuViewModel;
 
+    public Vector2 ScreenBounds;
+
     public void Awake()
     {
         Instance = this;
@@ -20,6 +22,8 @@ public class UIGameManager : MonoBehaviour
 
     public void Start()
     {
+        ScreenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
+
         StartMainMenu();
     }
 

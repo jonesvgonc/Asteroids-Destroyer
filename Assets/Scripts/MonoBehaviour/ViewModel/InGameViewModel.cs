@@ -21,6 +21,9 @@ public class InGameViewModel : MonoBehaviour, IConvertGameObjectToEntity
     private bool rotatingClockwise = false;
     private bool rotatingCounterClockwise = false;
 
+    private float timeToShot = 1f;
+    private float timeShotConter = 0f;
+
     public void StartInGameUI()
     {
         var inGameUI = Instantiate(inGameMenuPrefab);
@@ -85,11 +88,14 @@ public class InGameViewModel : MonoBehaviour, IConvertGameObjectToEntity
             var entity = entityManager.CreateEntity();
             entityManager.AddComponentData(entity, new RotateFlag() { Direction = 1 });
         }
-        if (shoting)
+        if (shoting && timeShotConter > timeToShot)
         {
+            timeShotConter = 0;
             var entity = entityManager.CreateEntity();
             entityManager.AddComponent<ShotFlag>(entity);
         }
+
+        timeShotConter += Time.deltaTime;
     }
 
     public void EndGame()

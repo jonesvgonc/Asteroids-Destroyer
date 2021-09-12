@@ -7,9 +7,6 @@ using UnityEngine;
 public class InputSystem : SystemBase
 {
 
-    private float timeToShot = 1f;
-    private float timeShotConter = 0f;
-
     protected override void OnCreate()
     {
         base.OnCreate();
@@ -44,11 +41,6 @@ public class InputSystem : SystemBase
             .WithStructuralChanges()
             .Run();
 
-        timeShotConter += Time.DeltaTime;
-        if (timeToShot < timeShotConter)
-        {
-            timeShotConter = 0f;
-
             Entities
                 .ForEach((Entity entity, ShotFlag component) =>
                 {
@@ -58,6 +50,5 @@ public class InputSystem : SystemBase
                 })
                 .WithStructuralChanges()
                 .Run();
-        }
     }
 }
