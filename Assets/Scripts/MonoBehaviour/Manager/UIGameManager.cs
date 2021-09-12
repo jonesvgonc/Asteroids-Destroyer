@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class UIGameManager : MonoBehaviour
 {
+    //This is the manager of all UI, he knows all of the View Models and start them when it is called;
+
     public static UIGameManager Instance;
 
     [SerializeField]

@@ -5,6 +5,8 @@ using UnityEditor;
 
 public class AutoUIAnchor : MonoBehaviour
 {
+    //This tool works with the anchors of the UI to make easy to create the Anchors to all of the UI elements.
+
     private static void Anchor(RectTransform rectTransform)
     {
         RectTransform parentRectTransform = null;

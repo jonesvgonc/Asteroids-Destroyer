@@ -1,9 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Entities;
 using UnityEngine;
 
-public class MainMenuViewModel : MonoBehaviour
+public class MainMenuViewModel : MonoBehaviour, IConvertGameObjectToEntity
 {
+    //This is the Main Menu View Model, all of the Main Menu UI rules and methods are concentrated here.
+
     [SerializeField]
     private GameObject mainMenuPrefab;
 
@@ -31,7 +34,10 @@ public class MainMenuViewModel : MonoBehaviour
     {
         DestroyMainMenu();
         UIGameManager.Instance.StartInGameMenu();
-        fadingText = false;        
+        fadingText = false;
+        EntityManager entityManager = World.DefaultGameObjectInjectionWorld.EntityManager;
+        var newEntity = entityManager.CreateEntity();
+        entityManager.AddComponent<StartGameFlag>(newEntity);
     }   
 
     private IEnumerator FadeInOut()
@@ -56,5 +62,10 @@ public class MainMenuViewModel : MonoBehaviour
     public void Fade(float alpha)
     {
         mainMenuView.StartGameText.CrossFadeAlpha(alpha, timeToFade, false);
+    }
+
+    public void Convert(Entity entity, EntityManager dstManager, GameObjectConversionSystem conversionSystem)
+    {
+        
     }
 }
