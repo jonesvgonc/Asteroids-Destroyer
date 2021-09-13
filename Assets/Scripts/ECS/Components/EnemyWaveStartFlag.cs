@@ -1,6 +1,6 @@
 using Unity.Entities;
 
-public class EnemyWaveStartFlag : IComponentData
+public struct EnemyWaveStartFlag : IComponentData
 {
     
 }

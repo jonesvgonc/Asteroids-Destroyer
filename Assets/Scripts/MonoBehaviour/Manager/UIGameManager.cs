@@ -49,4 +49,9 @@ public class UIGameManager : MonoBehaviour
     {
         inGameViewModel.SetLevel(level);
     }
+
+    public void GameOver()
+    {
+        inGameViewModel.EndGame();
+    }
 }

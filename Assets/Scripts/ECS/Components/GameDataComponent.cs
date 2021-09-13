@@ -11,4 +11,5 @@ public struct GameDataComponent : IComponentData
     public int Score;
     public int Lives;
     public int EnemiesAmmount;
+    public bool GameOver;
 }

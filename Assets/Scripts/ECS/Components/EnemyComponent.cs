@@ -1,7 +1,7 @@
 using Unity.Entities;
 using Unity.Mathematics;
 
-public class EnemyComponent : IComponentData
+public struct EnemyComponent : IComponentData
 {
     public float3 Direction;
     public int RotationSpeed;

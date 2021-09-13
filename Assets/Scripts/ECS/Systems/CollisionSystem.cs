@@ -1,10 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using Unity.Collections;
 using Unity.Entities;
 using Unity.Mathematics;
 using Unity.Transforms;
-using UnityEngine;
 
 [UpdateInGroup(typeof(InitializationSystemGroup))]
 public class CollisionSystem : SystemBase
@@ -84,10 +81,11 @@ public class CollisionSystem : SystemBase
 
         var playerEntity = GetSingletonEntity<PlayerComponent>();
         var playerTranslation = EntityManager.GetComponentData<Translation>(playerEntity);
+        
         for (int i = 0; i < enemiesEntities.Length; i++)
         {
             var enemyComponent = EntityManager.GetComponentData<EnemyComponent>(enemiesEntities[i]);
-            if (!enemyComponent.Destroyd)
+            if (!enemyComponent.Destroyd && !GetSingleton<PlayerComponent>().GetHit)
             {
                 var enemyTranslation = EntityManager.GetComponentData<Translation>(enemiesEntities[i]);
 
@@ -95,6 +93,9 @@ public class CollisionSystem : SystemBase
 
                 if (collide)
                 {
+                    var playerTempComponent = GetSingleton<PlayerComponent>();
+                    playerTempComponent.GetHit = true;
+                    SetSingleton(playerTempComponent);
                     playerTranslation.Value = new float3(0, -3.5f, 0);
                     EntityManager.AddComponentData(enemiesEntities[i], new DestroyFlag());
                     enemyComponent.Destroyd = true;
@@ -113,10 +114,14 @@ public class CollisionSystem : SystemBase
                     var gameData = GetSingleton<GameDataComponent>();
 
                     gameData.Lives--;
+                    var invencibleEntity = EntityManager.CreateEntity();
+                    EntityManager.AddComponent<InvencibleFlag>(invencibleEntity);
                     UIGameManager.Instance.SetLives(gameData.Lives);
-                    if(gameData.Lives < 0)
+                    if(gameData.Lives < 0 && !gameData.GameOver)
                     {
-                        //TODO: GAME OVER
+                        var gameOverEntity = EntityManager.CreateEntity();
+                        EntityManager.AddComponent<GameOverFlag>(gameOverEntity);
+                        gameData.GameOver = true;
                     }
 
                     gameData.EnemiesAmmount--;
@@ -135,5 +140,6 @@ public class CollisionSystem : SystemBase
 
 
         enemiesEntities.Dispose();
+                
     }
 }

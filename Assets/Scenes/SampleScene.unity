@@ -253,6 +253,8 @@ MonoBehaviour:
   PlayerPrefab: {fileID: 334205958698261339, guid: 29234281163d1684babe645c67effde8, type: 3}
   PlayerAttackPrefab: {fileID: 1912563794836348018, guid: fb5e04f3268912543ac198e189a176a2, type: 3}
   EnemyAsteroidPrefab: {fileID: 3000544223236237764, guid: cb64b360aeda1e741acc1d0ede040b1f, type: 3}
+  Enemy2AsteroidPrefab: {fileID: 3867812018182279154, guid: 0960279cbe046314d8f3ea45c8e8e33b, type: 3}
+  Enemy3AsteroidPrefab: {fileID: 4916302966778413843, guid: f07c32e548af7fa40a892d82e66b306d, type: 3}
 --- !u!114 &741165894
 MonoBehaviour:
   m_ObjectHideFlags: 0

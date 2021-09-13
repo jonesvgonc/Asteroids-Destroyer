@@ -12,7 +12,7 @@ public class StartGameSystem : SystemBase
     protected override void OnUpdate()
     {
         var gameData = EntityManager.CreateEntity();
-        EntityManager.AddComponentData(gameData, new GameDataComponent() { Bounds = UIGameManager.Instance.ScreenBounds, Level = 1, Lives = 3, Score = 0 });
+        EntityManager.AddComponentData(gameData, new GameDataComponent() { Bounds = UIGameManager.Instance.ScreenBounds, Level = 1, Lives = 3, Score = 0, GameOver = false });
 
         UIGameManager.Instance.SetScore(0);
         UIGameManager.Instance.SetLives(3);

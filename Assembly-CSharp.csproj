@@ -92,6 +92,10 @@
     <Compile Include="Assets\Scripts\ECS\Systems\CollisionSystem.cs" />
     <Compile Include="Assets\Scripts\ECS\Components\DividedEnemyComponent.cs" />
     <Compile Include="Assets\Scripts\ECS\Systems\DivideEnemySystem.cs" />
+    <Compile Include="Assets\Scripts\ECS\Components\GameOverFlag.cs" />
+    <Compile Include="Assets\Scripts\ECS\Systems\GameOverSystem.cs" />
+    <Compile Include="Assets\Scripts\ECS\Components\InvencibleFlag.cs" />
+    <Compile Include="Assets\Scripts\ECS\Systems\InvencibleSystem.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
