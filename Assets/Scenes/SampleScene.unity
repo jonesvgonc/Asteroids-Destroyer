@@ -252,6 +252,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerPrefab: {fileID: 334205958698261339, guid: 29234281163d1684babe645c67effde8, type: 3}
   PlayerAttackPrefab: {fileID: 1912563794836348018, guid: fb5e04f3268912543ac198e189a176a2, type: 3}
+  EnemyAsteroidPrefab: {fileID: 3000544223236237764, guid: cb64b360aeda1e741acc1d0ede040b1f, type: 3}
 --- !u!114 &741165894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -434,6 +435,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inGameViewModel: {fileID: 1887117158}
   mainMenuViewModel: {fileID: 1887117159}
+  ScreenBounds: {x: 0, y: 0}
 --- !u!114 &1887117158
 MonoBehaviour:
   m_ObjectHideFlags: 0

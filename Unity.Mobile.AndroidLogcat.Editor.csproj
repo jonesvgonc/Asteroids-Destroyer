@@ -57,44 +57,44 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidLogcatStyles.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidLogcatUserSettings.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidLogcatCallbacks.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidLogcatTags.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidLogcatColumnData.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidLogcatStatusBar.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\UI\AndroidLogcatSymbolList.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\Tasks\AndroidLogcatTaskResult.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidLogcatBuildInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidLogcatMemoryViewer.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidLogcatMessageProvider.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidLogcatInternalLog.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidTools\AndroidTools.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidLogcatProjectSettingsProvider.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidLogcatStacktraceWindow.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidLogcatMessagesViews.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidLogcatScreenCaptureWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidTools\AndroidTools.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidLogcatDevice.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidLogcatPackageInformation.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidLogcatSettingsProvider.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidLogcatTagInformation.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\UI\AndroidLogcatRegexList.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\Tasks\AndroidLogcatDispatcher.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AssemblyInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidTools\AndroidBridge.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidTools\Paths.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\Tasks\AndroidLogcatTaskInput.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidLogcatConsoleWindow.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidLogcatDeviceQuery.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidLogcatSettings.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\UI\AndroidLogcatReordableList.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidMemoryStatistics.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidLogcatUtilities.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidLogcatManager.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidLogcatRuntime.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\Tasks\AndroidLogcatConnectToDeviceTask.cs" />
-    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidLogcatContextMenu.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidLogcat.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidLogcatIPWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidLogcatUserSettings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidLogcatCallbacks.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidLogcatTags.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidLogcatStatusBar.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\Tasks\AndroidLogcatTaskResult.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidLogcatProjectSettingsProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidLogcatStacktraceWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidLogcatScreenCaptureWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidLogcatSettingsProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\Tasks\AndroidLogcatDispatcher.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\Tasks\AndroidLogcatTaskInput.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidLogcatConsoleWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidLogcatDeviceQuery.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidMemoryStatistics.cs" />
+    <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidLogcatContextMenu.cs" />
     <Compile Include="Library\PackageCache\com.unity.mobile.android-logcat@1.2.3\Editor\AndroidTools\Shell.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -335,17 +335,23 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Plastic.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+    <Reference Include="unityplastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    <Reference Include="Unity.Collections.LowLevel.ILSupport">
+      <HintPath>Library\PackageCache\com.unity.collections@0.15.0-preview.21\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="unityplastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Unsafe">
+      <HintPath>Library\PackageCache\com.unity.burst@1.4.11\Unity.Burst.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
@@ -706,13 +712,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{088238DC-3EFB-943D-FE99-05FE92BB375B}</Project>
-      <Name>UnityEngine.TestRunner</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
       <Project>{F2BFA5E2-6287-66D5-74A5-A19069EE1103}</Project>
       <Name>UnityEditor.TestRunner</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.TestRunner.csproj">
+      <Project>{088238DC-3EFB-943D-FE99-05FE92BB375B}</Project>
+      <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

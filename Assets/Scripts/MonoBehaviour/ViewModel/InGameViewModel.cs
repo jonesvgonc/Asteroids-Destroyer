@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using Unity.Entities;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -40,6 +38,21 @@ public class InGameViewModel : MonoBehaviour, IConvertGameObjectToEntity
         inGameView.RotateCounterClockwiseTrigger.triggers.Add(NewTriggerEntry("RotateCounterClock", false));
 
         entityManager = World.DefaultGameObjectInjectionWorld.EntityManager;
+    }
+
+    public void SetScore(int score)
+    {
+        inGameView.ScoreText.text = score.ToString();
+    }
+
+    public void SetLives(int lives)
+    {
+        inGameView.LivesText.text = lives.ToString();
+    }
+
+    public void SetLevel(int level)
+    {
+        inGameView.LevelText.text = level.ToString();
     }
 
     public EventTrigger.Entry NewTriggerEntry(string commandType, bool pointerDown)

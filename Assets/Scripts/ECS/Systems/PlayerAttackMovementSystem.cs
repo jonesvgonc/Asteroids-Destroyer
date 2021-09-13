@@ -1,9 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using Unity.Entities;
-using Unity.Mathematics;
 using Unity.Transforms;
-using UnityEngine;
 
 public class PlayerAttackMovementSystem : SystemBase
 {
@@ -20,7 +16,7 @@ public class PlayerAttackMovementSystem : SystemBase
         var delta = Time.DeltaTime;
         var commandBuffer = _commandBufferSystem.CreateCommandBuffer().AsParallelWriter();
 
-        var bounds = UIGameManager.Instance.ScreenBounds;
+        var bounds = GetSingleton<GameDataComponent>().Bounds;
 
         Dependency = Entities
             .ForEach((int entityInQueryIndex, Entity entity, LocalToWorld localWorld, ref PlayerAttackComponent projectile, ref Translation translation) =>

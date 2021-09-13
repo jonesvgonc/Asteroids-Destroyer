@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -53,17 +53,20 @@
     <UnityVersion>2020.3.17f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Runtime\Attributes\SystemVersionUsageAttribute.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Runtime\Attributes\InspectorOptionsAttribute.cs" />
-    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Runtime\Attributes\PaginationAttribute.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Runtime\Attributes\DelayedValueAttribute.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Runtime\AssemblyInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Runtime\Attributes\DisplayNameAttribute.cs" />
-    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Runtime\Attributes\MinValueAttribute.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Runtime\Extensions\VisualElementExtensions.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Runtime\Attributes\MinMaxAttribute.cs" />
-    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Runtime\Attributes\InspectorAttribute.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Runtime\Attributes\CreateInstanceOnInspectionAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Runtime\Attributes\PaginationAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Runtime\Attributes\MinValueAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Runtime\Attributes\InspectorAttribute.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Runtime\Unity.Properties.UI.asmdef" />
@@ -294,23 +297,23 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Plastic.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+    <Reference Include="unityplastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    <Reference Include="Unity.Collections.LowLevel.ILSupport">
+      <HintPath>Library\PackageCache\com.unity.collections@0.15.0-preview.21\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="unityplastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Unsafe">
-      <HintPath>Library\PackageCache\com.unity.burst@1.4.1\Unity.Burst.Unsafe.dll</HintPath>
+      <HintPath>Library\PackageCache\com.unity.burst@1.4.11\Unity.Burst.Unsafe.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Collections.LowLevel.ILSupport">
-      <HintPath>Library\PackageCache\com.unity.collections@0.15.0-preview.21\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.17f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>

@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using Unity.Entities;
 using Unity.Transforms;
-using UnityEngine;
 
 public class MoveSystem : SystemBase
 {
@@ -15,7 +12,6 @@ public class MoveSystem : SystemBase
     protected override void OnUpdate()
     {
         var delta = Time.DeltaTime;
-
 
         var moveAmmount = 0f;
 
@@ -31,7 +27,7 @@ public class MoveSystem : SystemBase
         {
             var LocalToWorldComponent = EntityManager.GetComponentData<LocalToWorld>(playerEntity);
             var moveComponent = EntityManager.GetComponentData<Translation>(playerEntity);
-            var bounds = UIGameManager.Instance.ScreenBounds;
+            var bounds = GetSingleton<GameDataComponent>().Bounds;
 
             moveComponent.Value += LocalToWorldComponent.Up * (moveAmmount * EntityManager.GetComponentData<PlayerComponent>(playerEntity).Speed * delta);
 

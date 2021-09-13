@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using Unity.Entities;
 using UnityEngine;
 
@@ -9,11 +8,8 @@ public class MainMenuViewModel : MonoBehaviour, IConvertGameObjectToEntity
 
     [SerializeField]
     private GameObject mainMenuPrefab;
-
     private MainMenuView mainMenuView;
-
     private bool fadingText = false;
-
     private float timeToFade = 1f;
 
     public void StartMainMenu()

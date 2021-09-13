@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -53,149 +53,152 @@
     <UnityVersion>2020.3.17f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\BuiltinMaterialProperties\BuiltinMaterialPropertyUnity_ProbeVolumeParams.cs" />
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Occlusion\BurstIntrinsics\MOCClearJob.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Deformations\Components\BlendShape.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Deformations\BufferManagers\SkinningBufferManager.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\BuiltinMaterialProperties\BuiltinMaterialPropertyUnity_ProbesOcclusion.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\BuiltinMaterialProperties\BuiltinMaterialPropertyUnity_LightData.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\InstancedRenderMeshBatchGroup.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Occlusion\OcclusionSortJob.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\RenderBoundsUpdateSystem.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HDRPMaterialProperties\HDRPMaterialPropertyAlphaCutoff.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\BuiltinMaterialProperties\BuiltinMaterialPropertyUnity_ProbeVolumeSizeInv.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HeapAllocator.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HybridV2Culling.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\BuiltinMaterialProperties\BuiltinMaterialPropertyUnity_MotionVectorsParams.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\BuiltinMaterialProperties\BuiltinMaterialPropertyUnity_LightmapIndex.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\RenderMeshFlippedWindingTagProxy.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Deformations\BufferManagers\BlendShapeBufferManager.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\RenderBoundsComponent.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\MeshRendererConversion.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Occlusion\OcclusionMenu.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\RenderMeshProxy.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\BuiltinMaterialProperties\BuiltinMaterialPropertyUnity_SpecCube0_HDR.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\BuiltinMaterialProperties\BuiltinMaterialPropertyUnity_SHAg.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Occlusion\BurstIntrinsics\MOCMergeJob.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HybridLightBakingDataSystem.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HDRPMaterialProperties\HDRPMaterialPropertySmoothnessRemapMax.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\BuiltinMaterialProperties\BuiltinMaterialPropertyUnity_MatrixPreviousMI_Tag.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Occlusion\OccluderInspector.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\URPMaterialProperties\URPMaterialPropertyMetallic.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HLODGroupConversion.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Probes\BlendProbeTag.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Deformations\Systems\BlendShapeDeformationSystem.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Occlusion\OcclusionWindow.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Deformations\Systems\PushMeshDataSystem.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\LodRequirementsUpdateSystem.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Probes\UpdateEntitiesSpecCube.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\BuiltinMaterialProperties\BuiltinMaterialPropertyUnity_SHAb.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\URPMaterialProperties\URPMaterialPropertyEmissionColor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\BuiltinMaterialProperties\BuiltinMaterialPropertyUnity_MatrixPreviousM.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Occlusion\BurstIntrinsics\MOCRasterizeJob.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Occlusion\OcclusionCompactBatchesJob.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\BuiltinMaterialProperties\BuiltinMaterialPropertyUnity_SHBg.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Occlusion\CreateMissingOcclusionMeshFromMeshRenderer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HDRPMaterialProperties\HDRPMaterialPropertyDetailSmoothnessScale.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HDRPMaterialProperties\HDRPMaterialPropertyThicknessRemap.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Deformations\BufferManagers\MeshBufferManager.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HDRPMaterialProperties\HDRPMaterialPropertyDetailNormalScale.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\URPMaterialProperties\URPMaterialPropertyCutoff.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Deformations\Systems\ResizeBuffersSystem.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Deformations\Structs\BlendShapeVertexDelta.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Occlusion\Native\MOCNativeSetResolutionJob.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HDRPMaterialProperties\HDRPMaterialPropertyDiffusionProfileHash.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Deformations\Systems\InstantiateDeformationSystem.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Probes\SHProperties.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\FrozenRenderSceneTagProxy.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\URPMaterialProperties\URPMaterialPropertyOcclusionStrength.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Occlusion\Occluder.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Deformations\Systems\PushSkinMatrixSystem.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\UpdateHybridChunksStructure.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\StructuralChangePresentationSystemGroup.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\FrustumPlanes.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\BuiltinMaterialProperties\BuiltinMaterialPropertyUnity_RenderingLayer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HDRPMaterialProperties\HDRPMaterialPropertySpecularColor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\MaterialOverrideAsset.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Occlusion\Native\MOCNativeRasterizeJob.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Probes\AmbientProbeTag.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\BuiltinMaterialProperties\BuiltinMaterialPropertyUnity_ProbeVolumeMin.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Occlusion\OcclusionDebugVisualization.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Deformations\DeformationSystemGroup.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\CullingStatsDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\UpdatePresentationSystemGroup.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Deformations\Components\Skinning.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\FrozenStaticRendererSystem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\URPMaterialProperties\URPMaterialPropertySmoothness.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\LODGroupExtensions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Occlusion\BurstIntrinsics\MOC.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HDRPMaterialProperties\HDRPMaterialPropertyBaseColor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HDRPMaterialProperties\HDRPMaterialPropertyAORemapMin.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\SparseUploader.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Deformations\Systems\PushBlendWeightSystem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\BuiltinMaterialProperties\BuiltinMaterialPropertyUnity_SHBb.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HLODGroupSectionSplitConversion.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\BuiltinMaterialProperties\BuiltinMaterialPropertyUnity_LightIndices.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HDRPMaterialProperties\HDRPMaterialPropertyThickness.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\CullingTypes.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Occlusion\OccluderEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\LODGroupConversion.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Deformations\Systems\SkinningDeformationSystem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\BuiltinMaterialProperties\BuiltinMaterialPropertyUnity_ProbeVolumeWorldToObject.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Deformations\Systems\PushSharedMeshDataSystem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\RenderMeshConversionContext.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\BuiltinMaterialProperties\BuiltinMaterialPropertyUnity_LODFade.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\FreezeStaticLODObjects.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Probes\CustomProbeTag.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\MaterialOverride.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HLOD.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\BuiltinMaterialProperties\BuiltinMaterialPropertyUnity_ProbeVolumeParams.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Deformations\BufferManagers\SkinningBufferManager.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\BuiltinMaterialProperties\BuiltinMaterialPropertyUnity_LightData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Occlusion\OcclusionSortJob.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HeapAllocator.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HybridV2Culling.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\BuiltinMaterialProperties\BuiltinMaterialPropertyUnity_MotionVectorsParams.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Deformations\BufferManagers\BlendShapeBufferManager.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\RenderBoundsComponent.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Occlusion\OcclusionMenu.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\BuiltinMaterialProperties\BuiltinMaterialPropertyUnity_SpecCube0_HDR.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Occlusion\BurstIntrinsics\MOCMergeJob.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HybridLightBakingDataSystem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HDRPMaterialProperties\HDRPMaterialPropertySmoothnessRemapMax.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Occlusion\OccluderInspector.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\URPMaterialProperties\URPMaterialPropertyMetallic.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Deformations\Systems\BlendShapeDeformationSystem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Deformations\Systems\PushMeshDataSystem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\LodRequirementsUpdateSystem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\BuiltinMaterialProperties\BuiltinMaterialPropertyUnity_SHAb.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\URPMaterialProperties\URPMaterialPropertyEmissionColor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\BuiltinMaterialProperties\BuiltinMaterialPropertyUnity_MatrixPreviousM.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\BuiltinMaterialProperties\BuiltinMaterialPropertyUnity_SHBg.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HDRPMaterialProperties\HDRPMaterialPropertyDetailSmoothnessScale.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HDRPMaterialProperties\HDRPMaterialPropertyThicknessRemap.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HDRPMaterialProperties\HDRPMaterialPropertyDetailNormalScale.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Deformations\Structs\BlendShapeVertexDelta.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Probes\SHProperties.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\URPMaterialProperties\URPMaterialPropertyOcclusionStrength.cs" />
+    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Deformations\Systems\PushSkinMatrixSystem.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\RenderMeshUtility.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\SkinnedMeshRendererConversion.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\URPMaterialProperties\URPMaterialPropertyBumpScale.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\MaterialPropertyAttribute.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\BuiltinMaterialProperties\BuiltinMaterialPropertyUnity_RenderingLayer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HDRPMaterialProperties\HDRPMaterialPropertySpecularColor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\MaterialOverrideAsset.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Deformations\Components\SharedMesh.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Occlusion\OcclusionTransformJob.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Occlusion\Native\MOCNativeRasterizeJob.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Occlusion\Native\MOCNativeTestJob.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Occlusion\OcclusionDebugRenderSystem.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Probes\AmbientProbeTag.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HDRPMaterialProperties\HDRPMaterialPropertyMetallic.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HDRPMaterialProperties\HDRPMaterialPropertyAORemapMax.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Probes\ManageSHPropertiesSystem.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Deformations\BufferManagers\ComputeBufferWrapper.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\BuiltinMaterialProperties\BuiltinMaterialPropertyUnity_ProbeVolumeMin.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Occlusion\Occludee.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Occlusion\OcclusionDebugVisualization.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\MeshLODComponent.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\CullingStatsDrawer.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\BuiltinMaterialProperties\BuiltinMaterialPropertyUnity_WorldTransformParams.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Deformations\DeformationSystemGroup.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\UpdatePresentationSystemGroup.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\URPMaterialProperties\URPMaterialPropertySpecColor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Deformations\Components\Skinning.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\FrozenStaticRendererSystem.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HDRPMaterialProperties\HDRPMaterialPropertySmoothnessRemapMin.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\URPMaterialProperties\URPMaterialPropertySmoothness.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\LODGroupExtensions.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Occlusion\BurstIntrinsics\MOC.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Deformations\Components\DeformedMesh.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\URPMaterialProperties\URPMaterialPropertyBaseColor.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Occlusion\BurstIntrinsics\MOCTestJob.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\MaterialColor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HDRPMaterialProperties\HDRPMaterialPropertyBaseColor.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\TrackShaderReflectionChangesSystem.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HDRPMaterialProperties\HDRPMaterialPropertyDetailAlbedoScale.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\BuiltinMaterialProperties\BuiltinMaterialPropertyUnity_DynamicLightmapST.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HDRPMaterialProperties\HDRPMaterialPropertyAORemapMin.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Occlusion\BurstIntrinsics\MOCSetResolutionJob.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HybridV2RenderSystem.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HDRPMaterialProperties\HDRPMaterialPropertyUnlitColor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\SparseUploader.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Deformations\Systems\PushBlendWeightSystem.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Deformations\Structs\BoneWeight.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HybridUtils.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\BuiltinMaterialProperties\BuiltinMaterialPropertyUnity_SHBb.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HLODGroupSectionSplitConversion.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Occlusion\OcclusionSettingsSystem.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\BuiltinMaterialProperties\BuiltinMaterialPropertyUnity_LightIndices.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\BuiltinMaterialProperties\BuiltinMaterialPropertyUnity_SHBr.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HDRPMaterialProperties\HDRPMaterialPropertyThickness.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\BuiltinMaterialProperties\BuiltinMaterialPropertyUnity_SHC.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\CullingTypes.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HybridEditorTools.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\BuiltinMaterialProperties\BuiltinMaterialPropertyUnity_SHAr.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\RenderMeshSystemV2.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Occlusion\OccluderEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\LODGroupConversion.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\DisableRenderingComponent.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Deformations\Systems\SkinningDeformationSystem.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\BuiltinMaterialProperties\BuiltinMaterialPropertyUnity_ProbeVolumeWorldToObject.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Deformations\Systems\PushSharedMeshDataSystem.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Probes\LightProbeUpdateSystem.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\RenderMeshConversionContext.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\BuiltinMaterialProperties\BuiltinMaterialPropertyUnity_LODFade.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HDRPMaterialProperties\HDRPMaterialPropertyEmissiveColor.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Deformations\Structs\VertexData.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\FreezeStaticLODObjects.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HLODManager.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Occlusion\UnityOcclusion.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Occlusion\OcclusionMesh.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HybridEntitiesConversion.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\BuiltinMaterialProperties\BuiltinMaterialPropertyUnity_LightmapST.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Probes\CustomProbeTag.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\RemoveLocalBounds.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\MatrixPreviousSystem.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\LightMaps.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\MaterialOverride.cs" />
-    <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HLOD.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\HDRPMaterialProperties\HDRPMaterialPropertySmoothness.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Occlusion\Native\MOCNativeMergeJob.cs" />
     <Compile Include="Library\PackageCache\com.unity.rendering.hybrid@0.11.0-preview.44\Unity.Rendering.Hybrid\Occlusion\Native\MOCNativeClearJob.cs" />
@@ -435,23 +438,23 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Plastic.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+    <Reference Include="unityplastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    <Reference Include="Unity.Collections.LowLevel.ILSupport">
+      <HintPath>Library\PackageCache\com.unity.collections@0.15.0-preview.21\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="unityplastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Unsafe">
-      <HintPath>Library\PackageCache\com.unity.burst@1.4.1\Unity.Burst.Unsafe.dll</HintPath>
+      <HintPath>Library\PackageCache\com.unity.burst@1.4.11\Unity.Burst.Unsafe.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Collections.LowLevel.ILSupport">
-      <HintPath>Library\PackageCache\com.unity.collections@0.15.0-preview.21\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.17f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>

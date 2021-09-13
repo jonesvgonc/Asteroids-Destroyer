@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class UIGameManager : MonoBehaviour
@@ -35,5 +33,20 @@ public class UIGameManager : MonoBehaviour
     public void StartMainMenu()
     {
         mainMenuViewModel.StartMainMenu();
+    }
+
+    public void SetScore(int score)
+    {
+        inGameViewModel.SetScore(score);
+    }
+
+    public void SetLives(int lives)
+    {
+        inGameViewModel.SetLives(lives);
+    }
+
+    public void SetLevel(int level)
+    {
+        inGameViewModel.SetLevel(level);
     }
 }

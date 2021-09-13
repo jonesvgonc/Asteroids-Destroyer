@@ -56,25 +56,25 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.4\Editor\AngleRangeView.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.4\Editor\ContextMenu.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.4\Editor\ObjectMenuCreation\GameObjectCreation.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.4\Editor\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.4\Editor\SpriteShapeAnalytics.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.4\Editor\SpriteShapeControllerEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.4\Editor\AngleRangeController.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.4\Editor\SpriteShapeEditorAnalytics.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.4\Editor\SpriteShapeHandleUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.4\Editor\AngleRangeView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.4\Editor\ContextMenu.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.4\Editor\SpriteShapeEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.4\Editor\SpriteShapeEditorTool.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.4\Editor\EditorSpriteGUIUtility.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.4\Editor\SpriteShapeAnalytics.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.4\Editor\SpriteShapeEditorGUI.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.4\Editor\ObjectMenuCreation\AssetCreation.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.4\Editor\SpriteShapeControllerEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.4\Editor\SpriteSelector.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.4\Editor\SceneDragAndDrop.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.4\Editor\AngleRangeGUI.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.4\Editor\SpriteShapeEditorUtility.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.4\Editor\AngleRangeController.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.4\Editor\SpriteShapeAssetPostProcessor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.4\Editor\SpriteShapeEditorAnalytics.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.4\Editor\SpriteShapeHandleUtility.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library\PackageCache\com.unity.2d.spriteshape@5.1.4\Editor\Handles\Shaders\Sprites-Inspector.shader" />
@@ -315,17 +315,23 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Plastic.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+    <Reference Include="unityplastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    <Reference Include="Unity.Collections.LowLevel.ILSupport">
+      <HintPath>Library\PackageCache\com.unity.collections@0.15.0-preview.21\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="unityplastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Unsafe">
+      <HintPath>Library\PackageCache\com.unity.burst@1.4.11\Unity.Burst.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
@@ -706,13 +712,13 @@
       <Project>{4D9F16FA-E116-A7CE-1AB8-D09642350680}</Project>
       <Name>Unity.2D.Path.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{088238DC-3EFB-943D-FE99-05FE92BB375B}</Project>
-      <Name>UnityEngine.TestRunner</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
       <Project>{F2BFA5E2-6287-66D5-74A5-A19069EE1103}</Project>
       <Name>UnityEditor.TestRunner</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.TestRunner.csproj">
+      <Project>{088238DC-3EFB-943D-FE99-05FE92BB375B}</Project>
+      <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

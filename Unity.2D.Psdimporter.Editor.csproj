@@ -56,20 +56,20 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@4.1.0\Editor\AssemblyInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@4.1.0\Editor\Analytics.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@4.1.0\Editor\TexturePlatformSettingsView.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@4.1.0\Editor\PSDImporterDataProvider.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@4.1.0\Editor\PSDImportPostProcessor.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@4.1.0\Editor\TexturePlatformSettingsController.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@4.1.0\Editor\PSDImporterEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@4.1.0\Editor\TextureSettingsGUI.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@4.1.0\Editor\TexturePlatformSettingsModal.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@4.1.0\Editor\SpriteData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@4.1.0\Editor\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@4.1.0\Editor\TexturePlatformSettingsView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@4.1.0\Editor\PSDImportPostProcessor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@4.1.0\Editor\TextureSettingsGUI.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@4.1.0\Editor\PSDImporter.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@4.1.0\Editor\Tasks\ExtractLayerTask.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@4.1.0\Editor\Tasks\FlattenImageTask.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@4.1.0\Editor\PSDLayer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.psdimporter@4.1.0\Editor\SpriteData.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library\PackageCache\com.unity.2d.psdimporter@4.1.0\Editor\Unity.2D.Psdimporter.Editor.asmdef" />
@@ -309,17 +309,23 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Plastic.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+    <Reference Include="unityplastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    <Reference Include="Unity.Collections.LowLevel.ILSupport">
+      <HintPath>Library\PackageCache\com.unity.collections@0.15.0-preview.21\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="unityplastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Unsafe">
+      <HintPath>Library\PackageCache\com.unity.burst@1.4.11\Unity.Burst.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
@@ -703,13 +709,13 @@
       <Project>{B6410031-5D75-7519-32E7-B7CF9D02D416}</Project>
       <Name>Unity.2D.Animation.Runtime</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{088238DC-3EFB-943D-FE99-05FE92BB375B}</Project>
-      <Name>UnityEngine.TestRunner</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
       <Project>{F2BFA5E2-6287-66D5-74A5-A19069EE1103}</Project>
       <Name>UnityEditor.TestRunner</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.TestRunner.csproj">
+      <Project>{088238DC-3EFB-943D-FE99-05FE92BB375B}</Project>
+      <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

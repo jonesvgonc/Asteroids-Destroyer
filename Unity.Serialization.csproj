@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -53,76 +53,79 @@
     <UnityVersion>2020.3.17f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Parser\JsonTokenizer.cs" />
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Views\ISerializedView.cs" />
-    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\JsonSerialization.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Binary\Adapters\BinaryAdapter.UnityEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Utility\PropertyChecks.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Views\SerializedValueView.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Views\Unsafe\UnsafeValueView.cs" />
-    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Binary\BinarySerialization.cs" />
-    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Views\Unsafe\UnsafeStringView.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Adapters\JsonAdapter.UnityEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Parser\SerializedObjectReader.cs" />
+    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Views\Unsafe\UnsafeStringView.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Views\Unsafe\UnsafeArrayView.cs" />
-    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Adapters\JsonAdapterCollection.cs" />
-    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Attributes.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Views\SerializedArrayView.cs" />
-    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Views\SerializedStringView.cs" />
-    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Adapters\JsonAdapter.System.cs" />
-    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Views\Unsafe\UnsafePrimitiveView.cs" />
-    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Utility\SerializedReferenceVisitor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Exceptions.cs" />
-    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\JsonSerialization.ToJson.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Utility\UnsafeBuffer.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Views\Unsafe\UnsafeObjectView.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Binary\Properties\BinaryPropertyVisitor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Binary\Adapters\BinaryAdapterCollection.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Views\SerializedPrimitiveView.cs" />
-    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Adapters\JsonAdapter.System.IO.cs" />
-    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Utility\SystemExtensions.cs" />
-    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\JsonSerialization.FromJson.cs" />
-    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\JsonStringBuffer.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Adapters\JsonAdapter.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Adapters\JsonAdapter.UnityEngine.cs" />
-    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Binary\BinarySerialization.ToBinary.cs" />
-    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Binary\BinarySerialization.FromBinary.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Views\Unsafe\UnsafeMemberView.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Views\SerializedObjectView.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Validation\JsonSimpleValidator.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Binary\Properties\BinaryPropertyReader.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Utility\NativeArrayUtility.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Migration\JsonMigrationContext.cs" />
-    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Binary\Adapters\BinaryAdapter.UnityEngine.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Binary\Properties\BinaryPropertyWriter.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Views\Unsafe\UnsafeView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Properties\JsonPropertyWriter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Binary\Adapters\BinaryAdapter.System.IO.cs" />
+    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Validation\JsonValidationType.cs" />
+    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Properties\JsonPropertyVisitor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\JsonObject.cs" />
+    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Parser\PackedBinaryStream.cs" />
+    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Parser\Token.cs" />
+    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Parser\SerializationConfiguration.cs" />
+    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Binary\Adapters\BinaryAdapter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Parser\JsonTokenizer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\JsonSerialization.cs" />
+    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Binary\BinarySerialization.cs" />
+    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Parser\SerializedObjectReader.cs" />
+    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Adapters\JsonAdapterCollection.cs" />
+    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Attributes.cs" />
+    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Views\SerializedStringView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Views\Unsafe\UnsafePrimitiveView.cs" />
+    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Adapters\JsonAdapter.System.cs" />
+    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Utility\SerializedReferenceVisitor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Exceptions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\JsonSerialization.ToJson.cs" />
+    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Binary\Adapters\BinaryAdapterCollection.cs" />
+    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Adapters\JsonAdapter.System.IO.cs" />
+    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\JsonSerialization.FromJson.cs" />
+    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Utility\SystemExtensions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\JsonStringBuffer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Binary\BinarySerialization.ToBinary.cs" />
+    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Binary\BinarySerialization.FromBinary.cs" />
+    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Binary\Adapters\BinaryAdapter.UnityEngine.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Properties\JsonPropertyReader.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Validation\JsonStandardValidator.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Utility\DefaultTypeConstruction.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Utility\Convert.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\JsonWriter.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Migration\JsonMigrationCollection.cs" />
-    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Properties\JsonPropertyWriter.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Views\SerializedMemberView.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Migration\IJsonMigration.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\AssemblyInfo.cs" />
-    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Binary\Adapters\BinaryAdapter.System.IO.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\ParseErrorExceptions.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Views\SerializedMemberViewCollection.cs" />
-    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Validation\JsonValidationType.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Utility\BlockReader.cs" />
-    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Properties\JsonPropertyVisitor.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Adapters\JsonAdapter.Primitives.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Binary\Adapters\BinaryAdapter.System.cs" />
-    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\JsonObject.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Parser\InvalidJsonException.cs" />
-    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Parser\PackedBinaryStream.cs" />
-    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Parser\Token.cs" />
-    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Parser\SerializationConfiguration.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Parser\PackedBinaryWriter.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Json\Parser\NodeParser.cs" />
     <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Binary\Adapters\BinaryAdapter.Primitives.cs" />
-    <Compile Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Binary\Adapters\BinaryAdapter.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library\PackageCache\com.unity.serialization@1.6.2-preview\Runtime\Unity.Serialization\Unity.Serialization.asmdef" />
@@ -353,23 +356,23 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Plastic.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+    <Reference Include="unityplastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    <Reference Include="Unity.Collections.LowLevel.ILSupport">
+      <HintPath>Library\PackageCache\com.unity.collections@0.15.0-preview.21\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="unityplastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Unsafe">
-      <HintPath>Library\PackageCache\com.unity.burst@1.4.1\Unity.Burst.Unsafe.dll</HintPath>
+      <HintPath>Library\PackageCache\com.unity.burst@1.4.11\Unity.Burst.Unsafe.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Collections.LowLevel.ILSupport">
-      <HintPath>Library\PackageCache\com.unity.collections@0.15.0-preview.21\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.17f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>

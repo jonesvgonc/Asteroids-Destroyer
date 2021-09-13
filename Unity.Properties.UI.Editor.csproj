@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -53,39 +53,62 @@
     <UnityVersion>2020.3.17f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\AssemblyInfo.cs" />
-    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Utility\Internal\Resources.cs" />
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Elements\Internal\IBindingTarget.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Search\SearchHandler.cs" />
-    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Elements\Internal\IContextElement.cs" />
-    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\BuiltinDrawers\MinDrawer.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\BindingUtilities.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\Adapters\BuiltInAdapter.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\BuiltinDrawers\GradientUsage.cs" />
-    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\BuiltinInspectors\BoundsInspector.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Search\Internal\SearchEngine.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Search\Internal\PropertiesSearchBackend.cs" />
-    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Elements\Internal\NullElement.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Utility\Internal\UssClasses.cs" />
-    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Elements\Internal\DictionaryElement.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\IPropertyDrawer.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\BuiltinInspectors\Vector3Inspector.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\BuiltinInspectors\KeyValuePairInspector.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\InspectorVisitorContext.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\BuiltinInspectors\Vector2Inspector.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\BuiltinInspectors\GuidInspector.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\BuiltinInspectors\Vector2IntInspector.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\BuiltinDrawers\MinMaxDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\InspectionContext.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Elements\Internal\IListElement.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\InspectorResolver.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\CustomInspectorVisitor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\BuiltinInspectors\Vector3IntInspector.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Search\Internal\QuickSearchBackend.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Utility\Internal\UiPersistentState.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Exceptions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Search\SearchElement.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\GuiFactory.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\IInspector.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\InspectorContext.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\BuiltinInspectors\BoundsIntInspector.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Utility\Internal\PropertyChecks.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\IInspectorVisitor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\BuiltinInspectors\LazyLoadReferenceInspector.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\BuiltinInspectors\CurveInspector.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Elements\Internal\PaginationElement.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\BuiltinDrawers\RangeDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Elements\Internal\ICustomStyleApplier.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Utility\Internal\Resources.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Elements\Internal\IContextElement.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\BuiltinDrawers\MinDrawer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\BuiltinInspectors\BoundsInspector.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Elements\Internal\NullElement.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Elements\Internal\DictionaryElement.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Elements\Internal\PopupElement.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Elements\Internal\HashSetElement.cs" />
-    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\BuiltinInspectors\GuidInspector.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\Adapters\InspectorAdapter.cs" />
-    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\BuiltinInspectors\SystemVersionInspector.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\BuiltinInspectors\BaseFieldInspector.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Utility\Internal\UITemplate.cs" />
+    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\BuiltinInspectors\SystemVersionInspector.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\CustomInspectorDatabase.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Inspector.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\PropertyDrawer.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Elements\Internal\BindingTarget.cs" />
-    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\BuiltinInspectors\Vector2IntInspector.cs" />
-    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\BuiltinDrawers\MinMaxDrawer.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Elements\PropertyElement.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\InspectorVisitor.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Utility\Internal\TextFieldExtensions.cs" />
@@ -93,39 +116,19 @@
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\BuiltinInspectors\GradientInspector.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\BuiltinInspectors\RectInspector.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Utility\Internal\StringExtensions.cs" />
-    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\InspectionContext.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Elements\Internal\NullableFoldout.cs" />
-    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Elements\Internal\IListElement.cs" />
-    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\InspectorResolver.cs" />
-    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\CustomInspectorVisitor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\BuiltinInspectors\Vector3IntInspector.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Utility\Internal\ListPool.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Elements\Internal\CircularReferenceElement.cs" />
-    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Search\Internal\QuickSearchBackend.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Elements\Internal\CustomInspectorElement.cs" />
-    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Utility\Internal\UiPersistentState.cs" />
-    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Exceptions.cs" />
-    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Search\SearchElement.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Utility\StylingUtility.cs" />
-    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\GuiFactory.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\InspectedReferences.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Utility\Internal\TypePairKey.cs" />
-    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\IInspector.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\BuiltinDrawers\ColorUsageDrawer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\InspectorContext.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\BuiltinInspectors\ColorInspector.cs" />
-    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\BuiltinInspectors\BoundsIntInspector.cs" />
-    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Utility\Internal\PropertyChecks.cs" />
-    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\IInspectorVisitor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\BuiltinInspectors\LazyLoadReferenceInspector.cs" />
-    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\BuiltinInspectors\CurveInspector.cs" />
-    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Elements\Internal\PaginationElement.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\Adapters\NullAdapter.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\BuiltinInspectors\Vector4Inspector.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\BuiltinInspectors\GlobalObjectIdInspector.cs" />
     <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\BindingVisitor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Inspector\Internal\BuiltinDrawers\RangeDrawer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Elements\Internal\ICustomStyleApplier.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library\PackageCache\com.unity.properties.ui@1.6.2-preview.1\Editor\Unity.Properties.UI.Editor.asmdef" />
@@ -365,23 +368,23 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Plastic.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+    <Reference Include="unityplastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    <Reference Include="Unity.Collections.LowLevel.ILSupport">
+      <HintPath>Library\PackageCache\com.unity.collections@0.15.0-preview.21\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="unityplastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Unsafe">
-      <HintPath>Library\PackageCache\com.unity.burst@1.4.1\Unity.Burst.Unsafe.dll</HintPath>
+      <HintPath>Library\PackageCache\com.unity.burst@1.4.11\Unity.Burst.Unsafe.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Collections.LowLevel.ILSupport">
-      <HintPath>Library\PackageCache\com.unity.collections@0.15.0-preview.21\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
@@ -758,13 +761,13 @@
       <Project>{81E2B032-3BE1-9B02-5A91-48F3A9C2644C}</Project>
       <Name>Unity.Serialization.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{088238DC-3EFB-943D-FE99-05FE92BB375B}</Project>
-      <Name>UnityEngine.TestRunner</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
       <Project>{F2BFA5E2-6287-66D5-74A5-A19069EE1103}</Project>
       <Name>UnityEditor.TestRunner</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.TestRunner.csproj">
+      <Project>{088238DC-3EFB-943D-FE99-05FE92BB375B}</Project>
+      <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

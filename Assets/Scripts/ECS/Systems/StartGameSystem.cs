@@ -1,9 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using Unity.Entities;
 using Unity.Mathematics;
 using Unity.Transforms;
-using UnityEngine;
 
 public class StartGameSystem : SystemBase
 {
@@ -14,10 +11,16 @@ public class StartGameSystem : SystemBase
     }
     protected override void OnUpdate()
     {
-        var inGameEntity = EntityManager.CreateEntity();
-        EntityManager.AddComponentData(inGameEntity, new InGameFlag());
+        var gameData = EntityManager.CreateEntity();
+        EntityManager.AddComponentData(gameData, new GameDataComponent() { Bounds = UIGameManager.Instance.ScreenBounds, Level = 1, Lives = 3, Score = 0 });
 
+        UIGameManager.Instance.SetScore(0);
+        UIGameManager.Instance.SetLives(3);
+        UIGameManager.Instance.SetLevel(1);
         var player = EntityManager.Instantiate(GameObjectsManager.PlayerEntity);
+
+        var newEntity = EntityManager.CreateEntity();
+        EntityManager.AddComponent<EnemyWaveStartFlag>(newEntity);
 
         EntityManager.SetComponentData(player, new Translation
         {

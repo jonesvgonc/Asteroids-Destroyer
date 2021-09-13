@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -53,24 +53,27 @@
     <UnityVersion>2020.3.17f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Library\PackageCache\com.unity.platforms@0.10.0-preview.10\Editor\Unity.Build.Classic.Private\BuildPipelineSelector.cs" />
-    <Compile Include="Library\PackageCache\com.unity.platforms@0.10.0-preview.10\Editor\Unity.Build.Classic.Private\NonIncremental\Steps\CalculateLocationPathStep.cs" />
-    <Compile Include="Library\PackageCache\com.unity.platforms@0.10.0-preview.10\Editor\Unity.Build.Classic.Private\CustomizerInfoImpl.cs" />
-    <Compile Include="Library\PackageCache\com.unity.platforms@0.10.0-preview.10\Editor\Unity.Build.Classic.Private\NonIncremental\Steps\ApplyUnitySettingsStep.cs" />
     <Compile Include="Library\PackageCache\com.unity.platforms@0.10.0-preview.10\Editor\Unity.Build.Classic.Private\BuildContextExtensions.cs" />
     <Compile Include="Library\PackageCache\com.unity.platforms@0.10.0-preview.10\Editor\Unity.Build.Classic.Private\UnitySettingsState.cs" />
     <Compile Include="Library\PackageCache\com.unity.platforms@0.10.0-preview.10\Editor\Unity.Build.Classic.Private\ClassicSharedData.cs" />
-    <Compile Include="Library\PackageCache\com.unity.platforms@0.10.0-preview.10\Editor\Unity.Build.Classic.Private\EmbeddedScenesValue.cs" />
-    <Compile Include="Library\PackageCache\com.unity.platforms@0.10.0-preview.10\Editor\Unity.Build.Classic.Private\NonIncremental\Steps\BuildPlayerStep.cs" />
     <Compile Include="Library\PackageCache\com.unity.platforms@0.10.0-preview.10\Editor\Unity.Build.Classic.Private\NonIncremental\Steps\SaveScenesAndAssetsStep.cs" />
     <Compile Include="Library\PackageCache\com.unity.platforms@0.10.0-preview.10\Editor\Unity.Build.Classic.Private\NonIncremental\MissingPipelines\MissingNonIncrementalPipeline.cs" />
-    <Compile Include="Library\PackageCache\com.unity.platforms@0.10.0-preview.10\Editor\Unity.Build.Classic.Private\AssemblyInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.platforms@0.10.0-preview.10\Editor\Unity.Build.Classic.Private\NonIncremental\Steps\SwitchPlatfomStep.cs" />
     <Compile Include="Library\PackageCache\com.unity.platforms@0.10.0-preview.10\Editor\Unity.Build.Classic.Private\ClassicBuildCustomizer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.platforms@0.10.0-preview.10\Editor\Unity.Build.Classic.Private\NonIncremental\Steps\CopyAdditionallyProvidedFilesStep.cs" />
+    <Compile Include="Library\PackageCache\com.unity.platforms@0.10.0-preview.10\Editor\Unity.Build.Classic.Private\NonIncremental\Steps\CalculateLocationPathStep.cs" />
+    <Compile Include="Library\PackageCache\com.unity.platforms@0.10.0-preview.10\Editor\Unity.Build.Classic.Private\CustomizerInfoImpl.cs" />
+    <Compile Include="Library\PackageCache\com.unity.platforms@0.10.0-preview.10\Editor\Unity.Build.Classic.Private\NonIncremental\Steps\ApplyUnitySettingsStep.cs" />
+    <Compile Include="Library\PackageCache\com.unity.platforms@0.10.0-preview.10\Editor\Unity.Build.Classic.Private\EmbeddedScenesValue.cs" />
+    <Compile Include="Library\PackageCache\com.unity.platforms@0.10.0-preview.10\Editor\Unity.Build.Classic.Private\NonIncremental\Steps\BuildPlayerStep.cs" />
+    <Compile Include="Library\PackageCache\com.unity.platforms@0.10.0-preview.10\Editor\Unity.Build.Classic.Private\AssemblyInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.platforms@0.10.0-preview.10\Editor\Unity.Build.Classic.Private\NonIncremental\Steps\NonIncrementalClassicSharedData.cs" />
     <Compile Include="Library\PackageCache\com.unity.platforms@0.10.0-preview.10\Editor\Unity.Build.Classic.Private\ClassicPipelineBase.cs" />
     <Compile Include="Library\PackageCache\com.unity.platforms@0.10.0-preview.10\Editor\Unity.Build.Classic.Private\NonIncremental\ClassicNonIncrementalPipelineBase.cs" />
-    <Compile Include="Library\PackageCache\com.unity.platforms@0.10.0-preview.10\Editor\Unity.Build.Classic.Private\NonIncremental\Steps\CopyAdditionallyProvidedFilesStep.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library\PackageCache\com.unity.platforms@0.10.0-preview.10\Editor\Unity.Build.Classic.Private\Unity.Build.Classic.Private.asmdef" />
@@ -713,13 +716,13 @@
       <Project>{4C6CB859-0D6B-CA00-7DEC-156D35991BD1}</Project>
       <Name>Unity.ScriptableBuildPipeline.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{088238DC-3EFB-943D-FE99-05FE92BB375B}</Project>
-      <Name>UnityEngine.TestRunner</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
       <Project>{F2BFA5E2-6287-66D5-74A5-A19069EE1103}</Project>
       <Name>UnityEditor.TestRunner</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.TestRunner.csproj">
+      <Project>{088238DC-3EFB-943D-FE99-05FE92BB375B}</Project>
+      <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

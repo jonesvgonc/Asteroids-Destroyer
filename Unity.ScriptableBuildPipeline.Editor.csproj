@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -53,92 +53,95 @@
     <UnityVersion>2020.3.17f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Shared\BuildSpriteData.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\WriteTypes\SceneRawWriteOperation.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Tasks\GenerateBundlePacking.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Interfaces\IBundleExplictObjectLayout.cs" />
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Tasks\CalculateSceneDependencyData.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\WriteTypes\AssetBundleWriteOperation.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\ReturnCode.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Shared\PrefabPackedIdentifiers.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Utilities\SceneStateCleanup.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Tasks\SwitchToBuildPlatform.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Tasks\PreviewSceneDependencyData.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\WriteTypes\SceneBundleWriteOperation.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Tasks\ArchiveAndCompressBundles.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Interfaces\IBuildLog.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Utilities\CacheServerDownloader.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Shared\LinearPackedIdentifiers.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Shared\BuildParameters.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Utilities\CacheServerUploader.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Utilities\BuildInterfacesWrapper.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Interfaces\IBuildContent.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Utilities\ValidationMethods.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Shared\BuildContent.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Interfaces\IBuildCache.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Tasks\CalculateCustomDependencyData.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Utilities\HashingMethods.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Tasks\CreateBuiltInShadersBundle.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Shared\Unity5PackedIdentifiers.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Shared\BuildExtendedAssetData.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Shared\BuildCallbacks.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Utilities\BuildCache.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Utilities\ExtensionMethods.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Shared\BuildWriteData.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Tasks\GenerateBundleCommands.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Tasks\AppendBundleHash.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Interfaces\IDeterministicIdentifiers.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Injector\ContextInjector.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Utilities\LinkXMLGenerator.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Interfaces\IBuildSpriteData.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Utilities\HashingHelpers.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Utilities\MD4.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Interfaces\IAssetRepresentationData.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Shared\BundleExplictObjectLayout.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Tasks\PostWritingCallback.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\AssemblyInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Tasks\PostScriptsCallback.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\CompatibilityBuildPipeline.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Tasks\PostPackingCallback.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Utilities\BuildLog.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Interfaces\IWriteOperation.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\ContentPipeline.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Utilities\FileCompressor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Tasks\RebuildSpriteAtlasCache.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Utilities\TrackerExtensions.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Tasks\GenerateBundleMaps.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Utilities\Preferences.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Tasks\StripUnusedSpriteSources.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Interfaces\IDependencyData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Interfaces\IWriteData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Utilities\ProgressLoggingTracker.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Utilities\SpookyHash.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Shared\BuildDependencyData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Utilities\CommonStrings.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Interfaces\IBuildParameters.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Shared\BuildTasksRunner.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Tasks\CalculateAssetDependencyData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Shared\BuildSpriteData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\WriteTypes\SceneRawWriteOperation.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Tasks\GenerateBundlePacking.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Interfaces\IBundleExplictObjectLayout.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Shared\PrefabPackedIdentifiers.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Utilities\SceneStateCleanup.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\WriteTypes\SceneBundleWriteOperation.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Tasks\ArchiveAndCompressBundles.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Interfaces\IBuildLog.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Utilities\CacheServerDownloader.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Shared\BuildParameters.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Utilities\CacheServerUploader.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Interfaces\IBuildContent.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Shared\BuildContent.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Shared\Unity5PackedIdentifiers.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Shared\BuildCallbacks.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Utilities\ExtensionMethods.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Tasks\GenerateBundleCommands.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Interfaces\IDeterministicIdentifiers.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Injector\ContextInjector.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Utilities\HashingHelpers.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Interfaces\IAssetRepresentationData.cs" />
+    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Tasks\PostWritingCallback.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Tasks\PostDependencyCallback.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Interfaces\IBuildResults.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Utilities\ProgressTracker.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Shared\BuildContext.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Utilities\BuildLog.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Interfaces\IProgressTracker.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Interfaces\IWriteOperation.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Interfaces\IBuildContext.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\ContentPipeline.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Tasks\GenerateLinkXml.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Utilities\FileCompressor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Tasks\RebuildSpriteAtlasCache.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Shared\BuildResults.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\WriteTypes\RawWriteOperation.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Tasks\WriteSerializedFiles.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Utilities\TrackerExtensions.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Utilities\BuildCacheUtility.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Tasks\GenerateBundleMaps.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Utilities\Preferences.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Tasks\StripUnusedSpriteSources.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Tasks\UpdateBundleObjectLayout.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Interfaces\IDependencyData.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Interfaces\IWriteData.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Utilities\ProgressLoggingTracker.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Profiler\BuildProfiler.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Utilities\CacheEntry.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Utilities\SpookyHash.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Shared\BuildDependencyData.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Tasks\GenerateSubAssetPathMaps.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Tasks\BuildPlayerScripts.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Utilities\CommonStrings.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Shared\DefaultBuildTasks.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Interfaces\IBuildParameters.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\WriteTypes\SceneDataWriteOperation.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Shared\BuildTasksRunner.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Utilities\GraphicsSettingsApi.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Utilities\BuildLogger.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Utilities\TaskCachingUtility.cs" />
-    <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Tasks\CalculateAssetDependencyData.cs" />
     <Compile Include="Library\PackageCache\com.unity.scriptablebuildpipeline@1.9.0\Editor\Interfaces\IBuildTasks.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -379,23 +382,23 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Plastic.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+    <Reference Include="unityplastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
     </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    <Reference Include="Unity.Collections.LowLevel.ILSupport">
+      <HintPath>Library\PackageCache\com.unity.collections@0.15.0-preview.21\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@2.0.0\Runtime\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="unityplastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
+    <Reference Include="Unity.Plastic.Antlr3.Runtime">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Burst.Unsafe">
-      <HintPath>Library\PackageCache\com.unity.burst@1.4.1\Unity.Burst.Unsafe.dll</HintPath>
+      <HintPath>Library\PackageCache\com.unity.burst@1.4.11\Unity.Burst.Unsafe.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.Collections.LowLevel.ILSupport">
-      <HintPath>Library\PackageCache\com.unity.collections@0.15.0-preview.21\Unity.Collections.LowLevel.ILSupport\Unity.Collections.LowLevel.ILSupport.dll</HintPath>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
@@ -764,13 +767,13 @@
       <Project>{931DC314-EDEC-31F6-E290-B2B56D8D25FD}</Project>
       <Name>UnityEditor.CacheServer</Name>
     </ProjectReference>
-    <ProjectReference Include="UnityEngine.TestRunner.csproj">
-      <Project>{088238DC-3EFB-943D-FE99-05FE92BB375B}</Project>
-      <Name>UnityEngine.TestRunner</Name>
-    </ProjectReference>
     <ProjectReference Include="UnityEditor.TestRunner.csproj">
       <Project>{F2BFA5E2-6287-66D5-74A5-A19069EE1103}</Project>
       <Name>UnityEditor.TestRunner</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.TestRunner.csproj">
+      <Project>{088238DC-3EFB-943D-FE99-05FE92BB375B}</Project>
+      <Name>UnityEngine.TestRunner</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

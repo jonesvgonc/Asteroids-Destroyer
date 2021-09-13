@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
-using Unity.Collections;
 using Unity.Entities;
 using UnityEngine;
 
@@ -23,7 +20,6 @@ public class PlayerAttackAnimationSystem : SystemBase
 
     protected override void OnUpdate()
     {
-        var attackEntities = attackQuery.ToEntityArray(Allocator.TempJob);
         if (spriteMax == 0) spriteMax = SpritesManager.Instance.PlayerShotSprites.Count();
 
         timeCount += Time.DeltaTime;
@@ -42,7 +38,5 @@ public class PlayerAttackAnimationSystem : SystemBase
             spriteIndex++;
             if (spriteIndex >= spriteMax) spriteIndex = 0;
         }
-
-        attackEntities.Dispose();
     }
 }
